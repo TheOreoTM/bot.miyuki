@@ -1,4 +1,11 @@
 function countWords(str) {
+  str = str
+    // full tags
+    .replace(/<[^>]+>/gm, '')
+    // partial tags
+    .replace(/^[^>]+>/gm, '')
+    .replace(/<[^>]+$/gm, '');
+  console.log(str);
   const arr = str.split(' ');
 
   return `${arr.filter((word) => word !== '').length} Words`;
