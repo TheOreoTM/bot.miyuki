@@ -19,6 +19,10 @@
 }
 
 /* random */
+mark {
+  background-color: #312b2bd2;
+  color: #c5c5c5;
+}
 
 .mention {
   border-radius: 3px;
