@@ -1,8 +1,6 @@
 function countWords(str) {
   str = str
-    // full tags
     .replace(/<[^>]+>/gm, '')
-    // partial tags
     .replace(/^[^>]+>/gm, '')
     .replace(/<[^>]+$/gm, '');
   console.log(str);
